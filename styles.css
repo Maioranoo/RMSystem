@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;   
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container2 p{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 100%;
+    font-size: 20px;
+}
+.container p{
+    color: white;
+    font-family: 'SansSerif';
+}
+.container h2{
+    font-family: 'SansSerif';
+    
+}
+.container h3{
+    font-family: 'SansSerif';
+    color: black;
+    
+}
+
+
+header {
+    background: #0f0f0f;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+.hero {
+    height: 100vh;
+    position: relative; 
+    display: flex;      
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url("imagens/fabrica.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #f97316;
+    padding: 12px 28px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.dark {
+    background: #111;
+    color: white;
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* NUMBERS */
+.numbers {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.numbers h3 {
+    font-size: 36px;
+    color: #f97316;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.dark .card {
+    background: darkgrey;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CLIENTES */
+.logos {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.logo-box {
+    background: #eee;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.logo-box p{
+   font-weight: bold;
+   color: #000;
+   font-size: 20px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* FORM */
+.form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, .form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form button {
+    background: #f97316;
+    padding: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.head-content{
+    display: flex;
+    align-items:start;
+    justify-content: space-evenly;
+}
+.head-content-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-content img {
+    width: 300px;
+    height: 300px;
+}
+
+.head-content span {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 20px;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contato:hover {
+    text-decoration: underline;
+}
+
+.btn-pdf {
+    background: #f97316;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+.titulo{
+    color: #000;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.titulo p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.galeria {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 900px;
+    overflow: hidden;
+}
+
+.carrossel {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 10; /* seta fica por cima, com peso maior */
+}
+
+.esquerda {
+    left: 0;
+}
+
+.direita {
+    right: 0;
+}
+
+
+
